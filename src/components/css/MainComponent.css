@@ -1,0 +1,184 @@
+.container {
+  background: #455d58;
+  color: #fff;
+  height: 33.34em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.start {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px 0 0 0;
+}
+
+.first-part {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.main-input {
+  display: flex;
+  gap: 8px;
+  width: 42em;
+}
+.input-fields input {
+  font-size: 16px;
+  height: 2.6em;
+  width: 40em;
+  padding: 0 18px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  outline: none;
+}
+.input-fields button {
+  font-size: 16px;
+  height: 2.6em;
+  width: 8em;
+  padding: 0 18px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.second-part {
+  background: white;
+  width: 74%;
+  border: none;
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.second-part h2 {
+  color: darkslategray;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+
+.content {
+  width: 90%;
+  margin: 0px auto;
+  color: black;
+}
+.content ul {
+  list-style: none;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4px;
+  gap: 18px;
+  background: #ececec;
+  border: 1px solid rgba(128, 128, 128, 0.648);
+  border-radius: 6px;
+}
+
+.contents div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-btns {
+  display: flex;
+  gap: 8px;
+}
+.control-btns button:last-child {
+  font-size: 12px;
+  height: 2.6em;
+  padding: 0 18px;
+  border: 1px solid grey;
+  background: rgb(211, 74, 74);
+  color: white;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.control-btns button:last-child:hover {
+  background: rgb(153, 49, 49);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+  .main-input {
+    flex-direction: row;
+    width: 100%;
+  }
+  .input-fields input {
+    width: 95%;
+  }
+  .input-fields button {
+    width: 100%;
+  }
+  .second-part {
+    width: 97%;
+  }
+  .contents {
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-input {
+    flex-direction: row;
+    width: 100%;
+  }
+  .input-fields input {
+    width: 90%;
+  }
+  .input-fields button {
+    width: 100%;
+  }
+  .contents {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .second-part {
+    width: 94%;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-input {
+    flex-direction: column;
+    width: 100%;
+  }
+  .input-fields input {
+    width: 100%;
+  }
+  .input-fields button {
+    width: 100%;
+  }
+  .contents {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .second-part {
+    width: 94%;
+  }
+}
